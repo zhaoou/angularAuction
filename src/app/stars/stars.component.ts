@@ -10,7 +10,7 @@ export class StarsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.stars = [true, true, true, true, true];
+    this.stars = [false, true, true, true, true];
   }
 
 }
