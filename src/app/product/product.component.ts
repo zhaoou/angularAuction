@@ -13,12 +13,12 @@ export class ProductComponent implements OnInit {
 
   ngOnInit() {
     this.products = [
-      new Product(1, 'first product', 1.99, 1.5, 'this is the first product', ['Electrical Product', 'Hardware Device']),
-      new Product(2, 'second product', 2.99, 2.5, 'this is the second product', ['Book']),
-      new Product(3, 'third product', 3.99, 3.5, 'this is the third product', ['Hardware Device']),
-      new Product(4, 'forth product', 4.99, 4.5, 'this is the forth product', ['Electrical Product', 'Hardware Device']),
-      new Product(5, 'fifth product', 5.99, 4.5, 'this is the fifth product', ['Electrical Product']),
-      new Product(6, 'sixth product', 6.99, 3.5, 'this is the sixth product', ['Book']),
+      new Product(1, 'first product', 1.99, 2, 'this is the first product', ['Electrical Product', 'Hardware Device']),
+      new Product(2, 'second product', 2.99, 3, 'this is the second product', ['Book']),
+      new Product(3, 'third product', 3.99, 4, 'this is the third product', ['Hardware Device']),
+      new Product(4, 'forth product', 4.99, 5, 'this is the forth product', ['Electrical Product', 'Hardware Device']),
+      new Product(5, 'fifth product', 5.99, 5, 'this is the fifth product', ['Electrical Product']),
+      new Product(6, 'sixth product', 6.99, 4, 'this is the sixth product', ['Book']),
     ];
   }
 }

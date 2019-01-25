@@ -14,10 +14,9 @@ export class StarsComponent implements OnInit {
 
   ngOnInit() {
     this.stars = [];
-    for (let i = 5; i < 0; i++) {
-      this.stars.push(i < this.rating);
+    for (let i = 0; i < 5; i++) {
+      this.stars.push(i >= this.rating);
     }
-    this.stars = [false, true, true, true, true];
   }
 
 }
