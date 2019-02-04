@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row col-sm-12">
   <div class="col-sm-12">
     <div class="form-group">
       <input class="form-control" placeholder="Please input product name" [formControl]="titleFilter">
@@ -7,8 +7,8 @@
 </div>
 <div class="row">
   <div *ngFor="let product of products | filter:'title':keyword" class="col-md-4 col-sm-4 col-lg-4">
-    <div class="img-thumbnail" >
-      <img src="http://placehold.it/260x150">
+    <div class="img-thumbnail img-fluid" >
+      <img src="http://placehold.it/245x150">
       <div class="figure-caption">
         <h6 class="float-right">{{product.price}} CAD</h6>
         <h6><a [routerLink]="['/product', product.id]">{{product.title}}</a></h6>
