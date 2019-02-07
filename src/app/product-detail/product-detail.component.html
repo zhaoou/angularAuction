@@ -15,6 +15,19 @@
 
 
 <div class="card card-body bg-light" style="margin-top: 20px;">
+  <div style="margin-bottom: 30px">
+    <button class="btn-success" (click)="isCommentHidden=!isCommentHidden">Post Comment</button>
+    <br>
+  </div>
+  <div [hidden]="isCommentHidden">
+    <div><app-stars [readonly]="false" [(rating)]="newRating"></app-stars></div>
+    <div><textarea [(ngModel)]="newComment"></textarea></div>
+    <div>
+      <button class="btn btn-secondary" (click)="addComment()">Submit</button>
+    </div>
+    <hr>
+  </div>
+
   <div class="row" *ngFor="let comment of comments">
     <div class="col-md-12">
       <app-stars [rating]="comment.rating"></app-stars>
