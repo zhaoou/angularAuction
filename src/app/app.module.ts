@@ -31,8 +31,8 @@ import { FilterPipe } from './pipe/filter.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule,
-    FormsModule
+    ReactiveFormsModule, // 响应式表单
+    FormsModule // 模板表单
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
