@@ -14,6 +14,7 @@ export class ProductDetailComponent implements OnInit {
   newRating: 5;
   newComment = '';
   isCommentHidden = true;
+
   constructor(private routeInfo: ActivatedRoute,
               private productService: ProductService) {
   }
@@ -30,5 +31,7 @@ export class ProductDetailComponent implements OnInit {
     this.newComment = null;
     this.newRating = 5;
     this.isCommentHidden = true;
+    const sum = this.comments.reduce( (sum, comment) => sum + comment.rating, 0);
+    this.product.rating = sum / this.comments.length;
   }
 }
