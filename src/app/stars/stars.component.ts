@@ -7,7 +7,7 @@ import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges
 })
 export class StarsComponent implements OnInit, OnChanges {
   @Input()
-  private rating = 0;
+  rating = 0;
 
   @Output()
   private ratingChange: EventEmitter<number> = new EventEmitter(); // the name xxChange here is important
@@ -15,7 +15,7 @@ export class StarsComponent implements OnInit, OnChanges {
   @Input()
   private readonly = true;
 
-  private stars: boolean[];
+  stars: boolean[];
   constructor() { }
 
   ngOnInit() {
