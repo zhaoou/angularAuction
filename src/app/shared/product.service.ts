@@ -31,6 +31,10 @@ export class ProductService {
   getCommentsByProduct(id: number): Comment[] {
     return this.comments.filter((comment: Comment) => comment.productId == id);
   }
+
+  getAllCategories(): string[]{
+    return ['Electrical Product', 'Hardware Device', 'Book'];
+  }
 }
 
 
